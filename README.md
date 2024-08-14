@@ -1,5 +1,5 @@
 <h1 class="description-short"><strong>Deenelife App</strong></h1>
-<p><b>**New Version 3.0</b> is available!!!</p>
+<p><b>New Version 3.0</b> is available!!!</p>
 <ul>
  	<li><a href="https://github.com/3elegant/DeeneLife/releases/download/1/app-release.apk" target="_blank" rel="noopener"><strong>Click here to Download</strong></a></li>
 </ul>
