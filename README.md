@@ -1,6 +1,6 @@
 <h1 class="description-short"><strong>Deenelife App</strong></h1>
 <ul>
- 	<li><a href="https://github.com/3elegant/DeeneLife/releases" target="_blank" rel="noopener"><strong>Click here to Download</strong></a></li>
+ 	<li><a href="https://github.com/3elegant/DeeneLife/releases/download/1/app-release.apk" target="_blank" rel="noopener"><strong>Click here to Download</strong></a></li>
 </ul>
 <h2 class="description-short"><b>About DeeneLife App</b></h2>
 <p class="paragraph-bottom"><strong>দ্বীনিলাইফ (DeeneLife App) একটি কুরআন ও সুন্নাহ ভিত্তিক ছবি-ওয়ালপেপার ডাউনলোড অ্যাপ একই সাথে ইসলামিক ব্লগ অ্যাপ।</strong></p>
@@ -8,7 +8,7 @@
 <p class="paragraph-bottom">কিন্তু সেই সাথে অনেক <strong>ভুল-অপপ্রচারও</strong> হচ্ছে। অনেক জাল হাদিসের প্রচার হচ্ছে, আবার কখনো মনগড়া, যাচাই না করেই হাদিস ও কুরআনের ভুল ব্যাখ্যা ও ভুল নম্বর সম্বলিত পোস্ট/ছবি শেয়ার হচ্ছে প্রতিনিয়ত। যেকোনো হাদিস বা আয়াত সামনে পড়লে তা অবশ্যই <strong>যাচাই করে নেওয়াই একজন প্রকৃত মুমিনের কাজ</strong> হবে। বর্তমান সময়ে এটি খুব বেশি কঠিন কাজও না। এমন অবস্থায় দ্বীনিলাইফ অ্যাপে পাচ্ছেন সহীহ, শুদ্ধ কুরআন ও হাদিসের বাণীগুলো। মূল সোর্স এর লিংক এবং সংক্ষিপ্ত বর্ণনাসহ প্রতিটি ছবি অ্যাপে পাবলিশ করা হয়ে থাকে। এতে করে সরাসরি যেকোনো আয়াত বা হাদিসের উক্তি <strong>যাচাই করে নিতে পারছেন</strong> (quran.com, sunnah.com, hadithbd.com) এর মত জনপ্রিয় ওয়েবসাইট গুলো থেকে।</p>
 
 <h2><strong>Screenshots</strong></h2>
-<img class="" src="https://i.ibb.co/PzrGG5L/deenelife2.jpg" width="500px" height="500" />
+<img class="" src="https://i.ibb.co/ChSJmp4/Deenelife-Promo.jpg" width="300" height="300" />
 <h2 class="description-short"><strong>Features</strong></h2>
 <ul>
  	<li>সহজ ছবি ডাউনলোড সিস্টেম</li>
