@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <title>DeeneLife New Update!</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Tiro+Bangla' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .maintenance {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        img {
+            border-radius: 15px;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #404040;
+            font-size: 22px;
+            margin: 5px 0;
+        }
+
+        .button {
+            font-size: 15px;
+            color: white;
+            background-color: green;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+             font-family: 'Poppins', sans-serif;
+        }
+
+        .button:hover {
+            background-color: darkgreen;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content p {
+            text-align: left;
+        }
+
+        .note {
+            font-family: 'Tiro Bangla', serif;
+            font-size: 15px;
+            color: #555;
+            margin-top: 10px;
+            text-align: center!important;
+            background-color: rgba(255, 0, 0, 0.1); /* Transparent red */
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+       .note a {
+    color: #137cc4; /* Sets the link color to dark blue */
+    text-decoration: none; /* Removes the underline from the link */
+}
+        p.update-info {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+            margin: 5px 0;
+            padding: 13px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #f54291;
+        }
+         p.update-info2 {
+            font-size: 16px;
+            font-family: Tiro Bangla;
+            color: #333;
+            line-height: 1.6;
+            margin: 5px 0;
+            padding: 13px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #095e1c;
+        }
+    </style>
+</head>
+
+<body class="animsition" onmousedown="return false" onselectstart="return false">
+    <!-- maintenance -->
+    <div class="maintenance segments-page">
+        <div class="container">
+            <div class="content b-shadow">
+                <img src="https://boimate.com/jkkniu/deenelifeplay.jpg" alt="End">
+                <h2><strong>DeeneLife Android App</strong></h2>
+
+                <p>
+                    <a id="download-link" href="#" target="_blank">
+                        <button class="button"><b>Click here to Download</b></button>
+                    </a>
+                </p>
+                
+                <p class="note">
+                   APK ফাইলটি  ডাউনলোড করার পর যদি ইন্সটল না হয়। তাহলে পুর্বে আপনার ফোনে থাকা DeeneLife এপটি আনইন্সটল করে, নতুন APK ফাইলটি ইন্সটল করুন।
+           <b>    অ্যাপ ইন্সটল সম্পর্কিত যেকোনো সমস্যায় আমাদের <a href="https://m.me/deenelifecom" target="_blank">ফেসবুকে মেসেজ দিন</a>।</b> 
+                </p>
+
+                <p class="update-info" id="update-info"></p>
+                <p class="update-info2">
+                    <b>App Features:</b><br>
+- কুরআন ও সুন্নাহ ভিত্তিক ছবি ও ব্লগে নিয়মিত আপডেট<br>
+- হাই কোয়ালিটি ছবি ডাউনলোড<br>
+- গুরুত্বপূর্ণ আপডেটগুলোর ডেইলি নোটিফিকেশন<br>
+- সহজ সার্চ সুবিধা (শত শত ছবি থেকে)<br>
+- কুরআনের আয়াত বা হাদিসের বিস্তারিত (রেফারেন্স সহ)<br>
+- পছন্দের ছবি/পোস্ট লিস্ট করে রাখার সুবিধা৷ (অফলাইনে যেকোনো সময় পড়তে  পারবেন)<br>
+- ডার্ক মোড অপশনসহ আরো অনেক ফিচারস। 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchReleaseInfo() {
+            const apiUrl = 'https://api.github.com/repos/3elegant/DeeneLife/releases/latest';
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'GET',
+                    headers: {
+                        'User-Agent': 'JavaScript'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+
+                if (data.name && data.body && data.assets[0].browser_download_url) {
+                    const bodyLines = data.body.split("\n");
+                    
+                    // Remove the first and last line if there are enough lines
+                    if (bodyLines.length > 2) {
+                        bodyLines.shift(); // Remove the first line
+                        bodyLines.pop();   // Remove the last line
+                    }
+
+                    const trimmedBody = bodyLines.join("\n");
+
+                    return {
+                        name: data.name,
+                        body: trimmedBody,
+                        downloadUrl: data.assets[0].browser_download_url
+                    };
+                }
+
+                return null;
+            } catch (error) {
+                console.error('Error fetching release info:', error);
+                return null;
+            }
+        }
+
+        async function updatePageContent() {
+            const releaseInfo = await fetchReleaseInfo();
+
+            if (releaseInfo) {
+                document.getElementById('download-link').href = releaseInfo.downloadUrl + '?target=external';
+                document.getElementById('update-info').innerHTML = `<b>What's new: (${releaseInfo.name})</b>${releaseInfo.body.replace(/\n/g, '<br>')}`;
+            } else {
+                document.getElementById('update-info').innerHTML = 'No update information available.';
+            }
+        }
+
+        updatePageContent();
+    </script>
+</body>
+</html>
