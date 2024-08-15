@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://app.deenelife.com/sitemap.xml
