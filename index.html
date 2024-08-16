@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -252,38 +251,41 @@
             <p>© 2024 Elegant Network</p>
         </footer>
     </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("https://api.github.com/repos/3elegant/DeeneLife/releases/latest")
+            .then(response => response.json())
+            .then(data => {
+                const downloadLink = document.getElementById("download-link");
+                const appVersion = document.getElementById("app-version");
+                const downloadSize = document.getElementById("download-size");
+                const lastUpdated = document.getElementById("last-updated");
+                const totalDownloads = document.getElementById("total-downloads");
+                const updateInfo = document.getElementById("update-info");
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("https://api.github.com/repos/3elegant/DeeneLife/releases/latest")
-                .then(response => response.json())
-                .then(data => {
-                    const downloadLink = document.getElementById("download-link");
-                    const appVersion = document.getElementById("app-version");
-                    const downloadSize = document.getElementById("download-size");
-                    const lastUpdated = document.getElementById("last-updated");
-                    const totalDownloads = document.getElementById("total-downloads");
-                    const updateInfo = document.getElementById("update-info");
+                const apkAsset = data.assets.find(asset => asset.name.toLowerCase().includes(".apk"));
 
-                    const apkAsset = data.assets.find(asset => asset.name.toLowerCase().includes(".apk"));
+                if (apkAsset) {
+                    downloadLink.href = apkAsset.browser_download_url;
+                    downloadSize.textContent = (apkAsset.size / (1024 * 1024)).toFixed(2) + " MB";
+                    totalDownloads.textContent = apkAsset.download_count + " times";
+                } else {
+                    downloadLink.href = "#";
+                    downloadSize.textContent = "N/A";
+                    totalDownloads.textContent = "N/A";
+                }
 
-                    if (apkAsset) {
-                        downloadLink.href = apkAsset.browser_download_url;
-                        downloadSize.textContent = (apkAsset.size / (1024 * 1024)).toFixed(2) + " MB";
-                        totalDownloads.textContent = apkAsset.download_count + " times";
-                    } else {
-                        downloadLink.href = "#";
-                        downloadSize.textContent = "N/A";
-                        totalDownloads.textContent = "N/A";
-                    }
+                appVersion.textContent = data.name.replace("Version ", "");
 
-                    appVersion.textContent = data.name.replace("Version ", ""); // Update this line
-                    lastUpdated.textContent = new Date(data.published_at).toLocaleDateString();
-                    updateInfo.innerHTML = data.body.replace(/\n/g, "<br>");
-                })
-                .catch(error => console.error("Error fetching release data:", error));
-        });
-    </script>
+                // Format the date in day/month/year format
+                const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+                lastUpdated.textContent = new Intl.DateTimeFormat('en-GB', options).format(new Date(data.published_at));
+
+                updateInfo.innerHTML = data.body.replace(/\n/g, "<br>");
+            })
+            .catch(error => console.error("Error fetching release data:", error));
+    });
+</script>
 </body>
 
 </html>
