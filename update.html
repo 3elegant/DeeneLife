@@ -176,7 +176,7 @@
 
             if (releaseInfo) {
                 document.getElementById('download-link').href = `${releaseInfo.downloadUrl}?target=external`;
-                document.getElementById('update-info').innerHTML = `<b>What's new: (${releaseInfo.name})</b>${releaseInfo.body.replace(/\n/g, '<br>')}`;
+                document.getElementById('update-info').innerHTML = `${releaseInfo.body.replace(/\n/g, '<br>')}`;
             }
         });
     </script>
