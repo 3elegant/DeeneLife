@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://raw.githubusercontent.com/3elegant/DeeneLife/main/images/favicon.ico">
     <title>DeeneLife.apk | DeeneLife Android App Download</title>
-    
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="Download DeeneLife Android App. Download Quran and Sunnah-based high-quality images.">
     <meta name="keywords" content="DeeneLife, Android App, Quran, Sunnah, Islamic Images, Blogs, High-Quality Downloads">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph Tags -->
     <meta property="og:title" content="DeeneLife.apk | DeeneLife Android App Download">
     <meta property="og:description" content="Download DeeneLife Android App for Quran and Sunnah-based Images.">
     <meta property="og:image" content="https://raw.githubusercontent.com/3elegant/DeeneLife/main/images/Deenelife-Promo.jpg">
     <meta property="og:url" content="https://app.deenelife.com">
     <meta property="og:type" content="website">
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -34,164 +35,211 @@
       "description": "Access Quran and Sunnah-based images and blogs, high-quality downloads, and more with the DeeneLife Android App."
     }
     </script>
-    
-    <!-- Fonts -->
+
+    <!-- Fonts and Icons -->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Tiro+Bangla' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f3f4f6;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 10px;
+            min-height: 100vh;
             box-sizing: border-box;
-        }
-
-        .maintenance {
-            text-align: center;
-            padding: 20px;
-            width: 100%;
         }
 
         .container {
-            background-color: white;
+            background-color: #ffffff;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            max-width: 500px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 700px;
             width: 100%;
-            margin: auto;
-            box-sizing: border-box;
+            margin: 20px;
+            text-align: center;
         }
 
-        img {
+        .container img {
             border-radius: 15px;
-            width: 100px;
-            height: 100px;
-            margin-bottom: 10px;
+            width: 125px;
+            height: 125px;
+            margin-bottom: 2px;
         }
 
         h2 {
-            color: #404040;
+            color: #333;
             font-size: 22px;
-            margin: 5px 0;
+            margin: 15px 0;
         }
 
         .button {
-            font-size: 15px;
-            color: white;
-            background-color: green;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            color: #fff;
+            background-color: #1abc9c;
             border: none;
-            padding: 10px 20px;
-            border-radius: 100px;
+            padding: 12px 25px;
+            border-radius: 25px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
             text-decoration: none;
             display: inline-block;
-            font-family: 'Poppins', sans-serif;
+            margin-top: 2px;
         }
 
         .button:hover {
-            background-color: darkgreen;
+            background-color: #16a085;
+            transform: translateY(-2px);
         }
 
         p {
             font-size: 16px;
-            color: #333;
+            color: #555;
             line-height: 1.6;
-            margin: 10px 0;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .content p {
-            text-align: left;
+            margin: 15px 0;
         }
 
         .note {
             font-family: 'Tiro Bangla', serif;
             font-size: 15px;
             color: #555;
-            margin-top: 10px;
-            text-align: center!important;
-            background-color: rgba(255, 0, 0, 0.1); /* Transparent red */
-            padding: 10px;
-            border-radius: 5px;
-            width: 100%;
-        }
-
-        .note a {
-            color: #137cc4; /* Sets the link color to dark blue */
-            text-decoration: none; /* Removes the underline from the link */
-        }
-
-        p.update-info {
-            font-size: 15px;
-            color: #333;
-            line-height: 1.6;
-            margin: 5px 0;
-            padding: 13px;
+            margin-top: 15px;
+            background-color: rgba(255, 0, 0, 0.1);
+            padding: 7px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border: 1px solid #f54291;
         }
 
+        .note a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        p.update-info,
         p.update-info2 {
+            font-family: 'Tiro Bangla', serif;
             font-size: 16px;
-            font-family: Tiro Bangla;
             color: #333;
             line-height: 1.6;
-            margin: 5px 0;
-            padding: 13px;
+            margin: 15px 0;
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border: 1px solid #095e1c;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #f54291;
+            background-color: #fafafa;
+            text-align: left;
+        }
+
+        p.update-info2 {
+            border-color: #16a085;
+            background-color: #eaf9f6;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .info-table th,
+        .info-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .info-table th {
+            background-color: #1abc9c;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .info-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .info-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .info-table td {
+            background-color: #ffffff;
+            color: #555;
+        }
+
+        .info-table td:first-child {
+            font-weight: bold;
+            color: #1abc9c;
+        }
+        
+        footer p {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        footer {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            margin-top: 30px;
         }
     </style>
 </head>
 
-<body class="animsition" onmousedown="return false" onselectstart="return false">
-    <!-- maintenance -->
-    <div class="maintenance segments-page">
-        <div class="container">
-            <div class="content b-shadow">
-                <img src="https://raw.githubusercontent.com/3elegant/DeeneLife/main/images/deenelife.jpg" alt="DeeneLife Android App">
-                <h2><strong>DeeneLife Android App</strong></h2>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/3elegant/DeeneLife/main/images/deenelife.jpg" alt="DeeneLife Android App">
+        <h2><strong>DeeneLife Android App</strong></h2>
 
-                <p>
-                    <a id="download-link" href="#">
-                        <button class="button"><b>Click here to Download</b></button>
-                    </a        
-                </p>
-                
-                <p class="note">
-                অ্যাপ ইন্সটল করার সময় File might be harmful / Warning দেখাতে পারে। এটা গুগল স্বাভাবিকভাবেই দেখায়। Install Anyway দিয়ে APK ইন্সটল করে নিন। দ্বীনিলাইফ অ্যাপ সম্পূর্ণ নিরাপদ। <b>অ্যাপ ইন্সটল সম্পর্কিত যেকোনো সমস্যায় আমাদের <a href="https://m.me/deenelifecom" target="_blank">ফেসবুকে মেসেজ দিন</a>।</b> 
-                </p>
+        <a id="download-link" href="#">
+            <button class="button"><b>Download Now</b> <i class="fas fa-download"></i></button>
+        </a>
 
-                <p class="update-info" id="update-info"></p>
-                <p class="update-info2">
-                    <b>App Features:</b><br>
-                    - কুরআন ও সুন্নাহ ভিত্তিক ছবি, ওয়ালপেপার ও আর্টিকেল<br>
-                    - হাই কোয়ালিটি ছবি ডাউনলোড<br>
-                    - গুরুত্বপূর্ণ আপডেটগুলোর ডেইলি নোটিফিকেশন<br>
-                    - সহজ সার্চ সুবিধা (শত শত ছবি থেকে)<br>
-                    - কুরআনের আয়াত বা হাদিসের বিস্তারিত (রেফারেন্স সহ)<br>
-                    - পছন্দের ছবি/পোস্ট লিস্ট করে রাখার সুবিধা৷ (অফলাইনে যেকোনো সময় পড়তে পারবেন)<br>
-                    - ডার্ক মোড অপশনসহ আরো অনেক ফিচারস। 
-                </p>
-            </div>
-<footer><p>© 2024 Elegant Network</p></footer>
-     </div>
+        <table class="info-table">
+            <tr>
+                <th>Download Size</th>
+                <td id="download-size"></td>
+            </tr>
+            <tr>
+                <th>Last Updated</th>
+                <td id="last-updated"></td>
+            </tr>
+            <tr>
+                <th>Total Downloads</th>
+                <td id="total-downloads"></td>
+            </tr>
+        </table>
+
+        <p class="note">
+            অ্যাপ ইন্সটল করার সময় File might be harmful / Warning দেখাতে পারে। এটা গুগল স্বাভাবিকভাবেই দেখায়। Install Anyway দিয়ে APK ইন্সটল করে নিন। দ্বীনিলাইফ অ্যাপ সম্পূর্ণ নিরাপদ। <b>অ্যাপ ইন্সটল সম্পর্কিত যেকোনো সমস্যায় আমাদের <a href="https://m.me/deenelifecom" target="_blank">ফেসবুকে মেসেজ দিন</a>।</b>
+        </p>
+
+        <p class="update-info" id="update-info"></p>
+
+        <p class="update-info2">
+            <b>App Features:</b><br>
+            - কুরআন ও সুন্নাহ ভিত্তিক ছবি, ওয়ালপেপার ও আর্টিকেল<br>
+            - হাই কোয়ালিটি ছবি ডাউনলোড<br>
+            - গুরুত্বপূর্ণ আপডেটগুলোর ডেইলি নোটিফিকেশন<br>
+            - সহজ সার্চ সুবিধা (শত শত ছবি থেকে)<br>
+            - কুরআনের আয়াত বা হাদিসের বিস্তারিত (রেফারেন্স সহ)<br>
+            - পছন্দের ছবি/পোস্ট লিস্ট করে রাখার সুবিধা৷ (অফলাইনে যেকোনো সময় পড়তে পারবেন)<br>
+            - ডার্ক মোড অপশনসহ আরো অনেক ফিচারস।
+        </p>
+
+        <footer>
+            <p>© 2024 Elegant Network</p>
+        </footer>
     </div>
+
     <script>
         async function fetchReleaseInfo() {
             const apiUrl = 'https://api.github.com/repos/3elegant/DeeneLife/releases/latest';
@@ -211,19 +259,25 @@
 
                 if (data.name && data.body && data.assets[0].browser_download_url) {
                     const bodyLines = data.body.split("\n");
-                    
+
                     // Remove the first and last line if there are enough lines
                     if (bodyLines.length > 2) {
                         bodyLines.shift(); // Remove the first line
-                        bodyLines.pop();   // Remove the last line
+                        bodyLines.pop(); // Remove the last line
                     }
 
                     const trimmedBody = bodyLines.join("\n");
 
+                    const date = new Date(data.assets[0].updated_at);
+                    const updatedAt = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`; // Format as day-month-year
+
                     return {
                         name: data.name,
                         body: trimmedBody,
-                        downloadUrl: data.assets[0].browser_download_url
+                        downloadUrl: data.assets[0].browser_download_url,
+                        size: (data.assets[0].size / (1024 * 1024)).toFixed(2), // Convert bytes to MB
+                        updatedAt: updatedAt,
+                        downloadCount: data.assets[0].download_count
                     };
                 }
 
@@ -240,6 +294,9 @@
             if (releaseInfo) {
                 document.getElementById('download-link').href = releaseInfo.downloadUrl + '?target=external';
                 document.getElementById('update-info').innerHTML = `<b>What's new: (${releaseInfo.name})</b>${releaseInfo.body.replace(/\n/g, '<br>')}`;
+                document.getElementById('download-size').textContent = releaseInfo.size + ' MB';
+                document.getElementById('last-updated').textContent = releaseInfo.updatedAt;
+                document.getElementById('total-downloads').textContent = releaseInfo.downloadCount;
             } else {
                 document.getElementById('update-info').innerHTML = 'No update information available.';
             }
@@ -248,4 +305,5 @@
         updatePageContent();
     </script>
 </body>
+
 </html>
